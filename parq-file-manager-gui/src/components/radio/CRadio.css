@@ -1,0 +1,18 @@
+.wrapper {
+  height: 50px;
+  width: 100%;
+}
+.urlField input {
+  height: 0;
+}
+.urlField label {
+  height: 0;
+  top: -7px;
+  font-size: 14px;
+}
+.urlField label[data-shrink="true"] {
+  top: 0;
+}
+.loadButton {
+  height: 35px;
+}

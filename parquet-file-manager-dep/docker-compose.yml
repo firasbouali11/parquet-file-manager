@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  front:
+    build:
+      context: ./webapp
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    expose:
+      - 80
+    depends_on:
+      - api
+    networks:
+      - firas
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - 5050:5050
+    expose:
+      - 5050
+    networks:
+      - firas
+
+networks:
+  firas:
+    external: true

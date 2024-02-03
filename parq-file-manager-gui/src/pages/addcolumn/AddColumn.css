@@ -1,0 +1,27 @@
+.paper {
+    margin: 60px 20%;
+    padding: 50px 0;
+}
+
+.title {
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+.textfield input {
+    width: 500px;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: green !important;
+    color: white !important;
+}
+.holder {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+}
